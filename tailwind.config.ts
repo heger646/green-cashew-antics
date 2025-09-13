@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        fredoka: ['Fredoka', 'cursive'],
+        nunito: ['Nunito', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -84,6 +88,21 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "cashew-bounce": "cashew-bounce 2s ease-in-out infinite",
+        "cashew-float": "cashew-float 3s ease-in-out infinite",
+        "cashew-roll": "cashew-roll 8s linear infinite",
+        "cashew-wiggle": "cashew-wiggle 1s ease-in-out infinite",
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-soft': 'var(--gradient-soft)',
+        'gradient-cashew': 'var(--gradient-cashew)',
+      },
+      boxShadow: {
+        'soft': 'var(--shadow-soft)',
+        'cashew': 'var(--shadow-cashew)',
+        'float': 'var(--shadow-float)',
       },
     },
   },

@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from '@/components/sections/HeroSection';
+import ScienceSection from '@/components/sections/ScienceSection';
+import RecipesSection from '@/components/sections/RecipesSection';
+import CommunitySection from '@/components/sections/CommunitySection';
+import RollingCashews from '@/components/RollingCashews';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="relative">
+      {/* Rolling cashews animation overlay */}
+      <RollingCashews />
+      
+      {/* Main content */}
+      <main>
+        <HeroSection />
+        <ScienceSection />
+        <RecipesSection />
+        <CommunitySection />
+      </main>
+      
+      {/* Footer */}
+      <footer className="bg-foreground text-background py-8">
+        <div className="container mx-auto px-6 text-center">
+          <p className="font-nunito">
+            © 2024 Green Cashews International. All rights reserved. 
+            <span className="text-primary ml-2">🌿 Spreading green cashew love worldwide! 🌿</span>
+          </p>
+          <p className="text-sm text-muted mt-2 font-nunito">
+            Disclaimer: Green cashews are 100% real in our hearts (and definitely not a joke... wink!) 💚
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
